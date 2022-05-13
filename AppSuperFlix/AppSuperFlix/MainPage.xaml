@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSuperFlix.MainPage"
+             BackgroundColor="Black">
+
+    <StackLayout>
+        <Image Source="superflix.png" />
+        <Grid  RowSpacing="1" ColumnSpacing="10" Padding="10" ColumnDefinitions="*, *"
+              RowDefinitions="*, *, *" BackgroundColor="Black">
+
+            <Image x:Name="sub_logo"
+                   Grid.Row="0" Grid.Column="0"
+                   Grid.ColumnSpan="2" 
+                   Margin="0" />
+
+            <Button x:Name="btnAventura" Text="Aventura"
+                    Grid.Row="1" Grid.Column="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    Margin="5"
+                    Style="{StaticResource ButtonVermelhoMenu}"
+                    Clicked="btnAventura_Clicked" />
+
+            <Button x:Name="btnAcao" Text="Ação"
+                    Grid.Row="1" Grid.Column="1"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    Margin="5"
+                    Style="{StaticResource ButtonVermelhoMenu}"
+                    Clicked="btnAcao_Clicked" />
+
+            <Button x:Name="btnComedia" Text="Comédia"
+                    Grid.Row="2" Grid.Column="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    Margin="5"
+                    Style="{StaticResource ButtonVermelhoMenu}"
+                    Clicked="btnComedia_Clicked" />
+
+            <Button x:Name="btnTerror" Text="Terror"
+                    Grid.Row="2" Grid.Column="1"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    Margin="5"
+                    Style="{StaticResource ButtonVermelhoMenu}"
+                    Clicked="btnTerror_Clicked" />
+
+
+        </Grid>
+        
+        
+        
+        <Label Text="By: Fanizzi" FontSize="Small" 
+               TextColor="Red" HorizontalTextAlignment="Center"
+               Margin="90"/>
+    </StackLayout>
+
+</ContentPage>

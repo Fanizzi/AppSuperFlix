@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSuperFlix.Categorias.Aventura"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="logo_acao" Style="{StaticResource LogoNaListaDePosters}" />
+            
+
+            <ScrollView>
+                <Grid Padding="5"
+                      ColumnDefinitions="*, *"
+                      RowDefinitions="300, 300">
+
+                    <ImageButton x:Name="btnUncharted"
+                                 Grid.Row="0" Grid.Column="0"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="btnUncharted_Clicked"/>
+
+                    <ImageButton x:Name="btnJumanji"
+                                 Grid.Row="0" Grid.Column="1"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="btnJumanji_Clicked"/>
+
+                    <ImageButton x:Name="btnContra_o_Gelo"
+                                 Grid.Row="1" Grid.Column="0"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="btnContra_o_Gelo_Clicked"/>
+
+                    <ImageButton x:Name="btnHotelTransylvaniaTransformania"
+                                 Grid.Row="1" Grid.Column="1"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="btnHotelTransylvaniaTransformania_Clicked"/>
+
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSuperFlix.App">
+    <Application.Resources>
+        <Style x:Key="Titulo" TargetType="Label">
+            <Setter Property="TextColor" Value="#c80000"/>
+            <Setter Property="FontSize" Value="40"/>
+        </Style>
+
+        <Style x:Key="ButtonVermelhoMenu" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#c80000" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="BorderRadius" Value="10" />
+        </Style>
+
+        <Style x:Key="ButtonVermelhoVoltar" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#c80000" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="BorderRadius" Value="10" />
+        </Style>
+
+        <Style x:Key="LabelTextoBranco" TargetType="Label">
+            <Setter Property="TextColor" Value="#fff"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        <Style x:Key="LabelTextoVermelho" TargetType="Label">
+            <Setter Property="TextColor" Value="#e80000"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        <Style x:Key="ButtonPosters" TargetType="ImageButton">
+            <Setter Property="Aspect" Value="Fill"/>
+            <Setter Property="BorderColor" Value="#555"/>
+            <Setter Property="BorderWidth" Value="2" />
+        </Style>
+
+        <Style x:Key="LogoNaListaDePosters" TargetType="Image">
+            <Setter Property="HeightRequest" Value="80" />
+        </Style>
+
+        <Style x:Key="LogoNoFilme" TargetType="Image">
+            <Setter Property="HeightRequest" Value="50" />
+        </Style>
+    </Application.Resources>
+</Application>

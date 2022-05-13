@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSuperFlix.Categorias.Comedia"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="logo" Style="{StaticResource LogoNaListaDePosters}"/>
+
+            <ScrollView>
+                <Grid RowDefinitions="300, 300" 
+                      ColumnDefinitions="*, *" Padding="5">
+
+                    <ImageButton x:Name="btnAdamProject"
+                                 Grid.Column="0" Grid.Row="0"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="btnAdamProject_Clicked"/>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

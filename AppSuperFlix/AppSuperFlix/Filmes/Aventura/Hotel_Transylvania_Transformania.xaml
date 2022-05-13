@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSuperFlix.Filmes.Aventura.Hotel_Transylvania_Transformania"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}"/>
+
+            <Grid RowDefinitions="300, *"
+                  ColumnDefinitions="*, *">
+
+                <WebView Source="https://www.youtube.com/embed/bKOoGVZHQ3E"
+                         Grid.ColumnSpan="2"
+                         Grid.Row="0" Grid.Column="0"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="#2f2f30"/>
+
+                <Image x:Name="poster" Grid.Row="1" Grid.Column="0" Aspect="AspectFill"/>
+
+                <StackLayout Grid.Column="1" Grid.Row="1">
+                    <Label Text="Nome: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Hotel Transylvania Transformania" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Ano de Lançamento" Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text=" 22 de abril de 2022" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Direção: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Anna Boden, Ryan Fleck" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="SINOPSE:  " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Nathan Drake e seu parceiro canastrão Victor 'Sully' Sullivan embarcam em uma perigosa busca para encontrar o maior tesouro jamais encontrado. Enquanto isso, eles também rastreiam pistas que podem levar ao irmão perdido de Nathan." FontSize="16" Style="{StaticResource LabelTextoBranco}"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

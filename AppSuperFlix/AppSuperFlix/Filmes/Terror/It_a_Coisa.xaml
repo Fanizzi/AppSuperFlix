@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSuperFlix.Filmes.Terror.It_a_Coisa"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}" />
+
+            <Grid RowDefinitions="300, *"
+                  ColumnDefinitions="*, *">
+
+                <WebView Source="https://www.youtube.com/embed/dD264ZjfKlk"
+                         Grid.ColumnSpan="2"
+                         Grid.Column="0" Grid.Row="0"
+                         BackgroundColor="#2f2f30"
+                         VerticalOptions="FillAndExpand"/>
+
+                <Image x:Name="poster" Grid.Column="0" Grid.Row="1" Aspect="AspectFill" />
+
+                <StackLayout Grid.Column="1" Grid.Row="1">
+                    <Label Text="Nome: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="It - A coisa" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Ano de Lançamento" Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text=" 7 de setembro de 2017" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Direção: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Andy Muschietti" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="SINOPSE:  " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Um grupo de crianças se une para investigar o misterioso desaparecimento de vários jovens em sua cidade. Eles descobrem que o culpado é Pennywise, um palhaço cruel que se alimenta de seus medos e cuja violência teve origem há vários séculos." FontSize="16" Style="{StaticResource LabelTextoBranco}"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

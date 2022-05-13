@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSuperFlix.Filmes.Sonic2"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}"/>
+            
+            <Grid ColumnDefinitions="*, *"
+                  RowDefinitions="300, *">
+
+                <WebView Grid.ColumnSpan="2"
+                         Grid.Row="0" Grid.Column="0"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="#2f2f30"
+                         Source="https://www.youtube.com/embed/IrJeYZgzIqw"/>
+                         
+
+                <Image x:Name="poster" Grid.Row="1" Grid.Column="0" Aspect="AspectFill"/>
+
+                <StackLayout Grid.Column="1" Grid.Row="1">
+                    <Label Text="Nome: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Sonic 2 - O Filme" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Ano de Lançamento" Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text=" 7 de abril de 2022" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Direção: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Jeff Fowler" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="SINOPSE:  " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Depois de se estabelecer em Green Hills, Sonic está ansioso para provar que tem o que é preciso para ser um verdadeiro herói. Seu teste acontece quando o Dr. Robotnik retorna com um novo parceiro, Knuckles, em busca de uma esmeralda mística que tem o poder de destruir civilizações. Sonic se une a seu próprio ajudante, Tails, e juntos eles embarcam em uma jornada pelo mundo para encontrar a esmeralda antes que ela caia em mãos erradas." FontSize="16" Style="{StaticResource LabelTextoBranco}"/>
+                </StackLayout>
+
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

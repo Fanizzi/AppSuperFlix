@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSuperFlix.Categorias.Terror"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="logo" Style="{StaticResource LogoNaListaDePosters}" />
+            <ScrollView>
+
+                <Grid Padding="5" RowDefinitions="300, 300"
+                  ColumnDefinitions="*, *">
+
+                    <ImageButton x:Name="btnMorbius"
+                                Grid.Column="0" Grid.Row="0"
+                                Style="{StaticResource ButtonPosters}"
+                                Clicked="btnMorbius_Clicked" />
+
+                    <ImageButton x:Name="btnIt_a_coisa"
+                                 Grid.Column="1" Grid.Row="0"
+                                 Style="{StaticResource ButtonPosters}"
+                                Clicked="btnIt_a_coisa_Clicked"/>
+
+                    <ImageButton x:Name="btnIt_chapter_2"
+                                Grid.Column="0" Grid.Row="1"
+                                Style="{StaticResource ButtonPosters}"
+                                Clicked="btnIt_chapter_2_Clicked"/>
+
+                    <ImageButton x:Name="btnGuerra_mundial_z"
+                                Grid.Column="1" Grid.Row="1"
+                                Style="{StaticResource ButtonPosters}"
+                                Clicked="btnGuerra_mundial_z_Clicked"/>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

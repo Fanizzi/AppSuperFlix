@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSuperFlix.Filmes.Terror.morbius"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}" />
+
+            <Grid RowDefinitions="300, *"
+                  ColumnDefinitions="*, *">
+
+                <WebView Source="https://www.youtube.com/embed/S55qvOKW5T0"
+                         Grid.Column="0" Grid.Row="0"
+                         Grid.ColumnSpan="2"
+                         BackgroundColor="#2f2f30"
+                         VerticalOptions="FillAndExpand" />
+
+                <Image x:Name="poster" Grid.Row="1" Grid.Column="0" Aspect="AspectFill" />
+
+                <StackLayout Grid.Column="1" Grid.Row="1">
+                    <Label Text="Nome: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Morbius" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Ano de Lançamento" Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text=" 31 de março de 2022" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Direção: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Daniel Espinosa" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="SINOPSE:  " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="O bioquímico Michael Morbius tenta curar-se de uma doença rara no sangue mas, sem perceber, ele fica infectado com uma forma de vampirismo." FontSize="16" Style="{StaticResource LabelTextoBranco}"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
