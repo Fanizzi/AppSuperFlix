@@ -83,7 +83,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\superflix.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppSuperFlix\AppSuperFlix.csproj">
       <Project>{375E23E4-44D0-480D-A19D-5CD959A00970}</Project>
